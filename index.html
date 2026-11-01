@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type = "text/tailwindcss">
+    @font-face {
+      font-family: Manrope;
+      src: url(https://fonts.google.com/specimen/Manrope);
+      font-weight: 500 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @theme {
+      --font-manrope: "Manrope", serif;
+      --color-dark: hsl(217, 19%, 35%);
+      --color-light: hsl(210, 46%, 95%);
+      --color-grayish: hsl(212, 23%, 69%);
+      --color-desaturated: hsl(214, 17%, 51%);
+    }
+
+
+  </style>
+
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class = "px-6 py-20 bg-light text-md">
+  <article class = "bg-white rounded-xl">
+    <img class = "rounded-t-xl w-full h-52 object-cover " src="images/drawers.jpg" alt="drawers">
+    <h1 class = " text-left px-10 pt-8 pb-4 font-bold text-dark w-full">Shift the overall look and feel by adding these wonderful 
+  touches to furniture in your home</h1>
+    <p class = "px-8 text-desaturated leading-5 text-left text-[13px]">Ever been in a room and felt like something was missing? Perhaps 
+    it felt slightly bare and uninviting. I've got some simple tips 
+    to help you make any room feel complete.</p>
+    <footer>
+      <img src="images/avatar-michelle.jpg" alt="">
+      <span>Michelle Appleton</span>
+      <time datetime="">28 Jun 2020</time>
+      </footer>
+
+      
+    </article>
+
+  
+
+  
+
+  
+  
+
+  Share
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src = "script.js"></script>
+</body>
+</html>
