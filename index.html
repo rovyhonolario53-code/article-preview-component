@@ -9,7 +9,7 @@
   <style type = "text/tailwindcss">
     @font-face {
       font-family: Manrope;
-      src: url(https://fonts.google.com/specimen/Manrope);
+      src: url(./fonts/Manrope-VariableFont_wght.ttf);
       font-weight: 500 700;
       font-style: normal;
       font-display: swap;
@@ -34,35 +34,29 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class = "px-6 py-20 bg-light text-md">
+<body class = "px-6 py-20 bg-light font-manrope text-[13px]">
   <article class = "bg-white rounded-xl">
-    <img class = "rounded-t-xl w-full h-52 object-cover " src="images/drawers.jpg" alt="drawers">
-    <h1 class = " text-left px-10 pt-8 pb-4 font-bold text-dark w-full">Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home</h1>
-    <p class = "px-8 text-desaturated leading-5 text-left text-[13px]">Ever been in a room and felt like something was missing? Perhaps 
+    <img class = "rounded-t-xl w-full h-[200px] object-cover " src="images/drawers.jpg" alt="drawers">
+    <div class = "px-8">
+      <h1 class = "text-left pt-8 pb-4 font-bold text-dark text-[18px] leading-6 m-0 w-full">Shift the overall look and feel by adding these wonderful 
+    touches to furniture in your home</h1>
+    <p class = "text-desaturated leading-5 text-left text-[13px] m-0">Ever been in a room and felt like something was missing? Perhaps 
     it felt slightly bare and uninviting. I've got some simple tips 
     to help you make any room feel complete.</p>
-    <footer>
-      <img src="images/avatar-michelle.jpg" alt="">
-      <span>Michelle Appleton</span>
-      <time datetime="">28 Jun 2020</time>
+    </div>
+    <footer class = "flex flex-row px-8 pt-8 pb-5 items-center justify-between">
+      <img class = "w-10 h-10 rounded-full" src="images/avatar-michelle.jpg" alt="">
+      <div class = "flex flex-col pl-5 flex-1">
+        <span class = "font-semibold  text-dark">Michelle Appleton</span>
+        <time datetime="" class = "text-desaturated">28 Jun 2020</time>
+      </div>
+      <img class = "p-4 rounded-full bg-light" src="images/icon-share.svg" alt="share">
       </footer>
-
-      
     </article>
 
-  
-
-  
-
-  
-  
-
-  Share
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Rain</a>.
   </footer>
   <script src = "script.js"></script>
 </body>
