@@ -31,43 +31,50 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="px-6 py-20 bg-light font-manrope text-[13px]">
-  <article class="bg-white rounded-xl">
-    <img class="rounded-t-xl w-full h-[200px] object-cover" src="images/drawers.jpg" alt="drawers">
+<body class="px-6 py-20 bg-light font-manrope text-[13px] md:min-h-screen md:flex md:flex-col md:justify-center">
+  <article class="bg-white rounded-xl md:grid md:grid-cols-[285px_1fr] md:w-full md:max-w-[768px] md:mx-auto md:min-h-[280px]">
+    <img class="rounded-t-xl md:rounded-l-xl md:rounded-r-none w-full h-[200px] md:h-full object-cover"
+         src="images/drawers.jpg" alt="drawers">
 
-    <div class="px-8">
-      <h1 class="pt-8 pb-4 font-bold text-dark text-[18px] leading-6">
-        Shift the overall look and feel by adding these wonderful touches to furniture in your home
-      </h1>
-      <p class="text-desaturated leading-5 text-[13px] mb-4">
-        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
-      </p>
-    </div>
-
-    <footer class="relative flex flex-row px-8 py-4 items-center justify-between">
-      <img class="w-10 h-10 rounded-full object-cover" src="images/avatar-michelle.jpg" alt="">
-
-      <div class="flex flex-col pl-5 flex-1">
-        <span class="font-bold text-dark">Michelle Appleton</span>
-        <time datetime="2020-06-28" class="text-grayish">28 Jun 2020</time>
+    <div class="flex flex-col justify-between">
+      <div class="px-8 md:px-10">
+        <h1 class="pt-8 pb-4 font-bold text-dark text-[18px] leading-6 md:text-[20px] md:leading-7">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+        <p class="text-desaturated leading-5 text-[13px] mb-4">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+        </p>
       </div>
 
-      <div>
-        <button id="share-btn" aria-expanded="false" aria-label="Share"
-          class="group relative z-10 size-8 rounded-full bg-light grid place-items-center aria-expanded:bg-desaturated">
-          <img src="images/icon-share.svg" alt=""
-            class="w-4 group-aria-expanded:brightness-0 group-aria-expanded:invert">
-        </button>
+      <footer class="relative md:static flex flex-row px-8 md:px-10 py-4 items-center justify-between">
+        <img class="w-10 h-10 rounded-full object-cover" src="images/avatar-michelle.jpg" alt="">
 
-        <div id="share-panel"
-          class="hidden absolute inset-0 items-center gap-4 px-8 bg-dark rounded-b-xl">
-          <span class="uppercase tracking-[0.5em] text-grayish">Share</span>
-          <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" class="w-5"></a>
-          <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" class="w-5"></a>
-          <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest" class="w-5"></a>
+        <div class="flex flex-col pl-5 flex-1">
+          <span class="font-bold text-dark">Michelle Appleton</span>
+          <time datetime="2020-06-28" class="text-grayish">28 Jun 2020</time>
         </div>
-      </div>
-    </footer>
+
+        <div class="md:relative">
+          <button id="share-btn" aria-expanded="false" aria-label="Share"
+            class="group relative z-10 size-8 rounded-full bg-light grid place-items-center aria-expanded:bg-desaturated">
+            <img src="images/icon-share.svg" alt=""
+              class="w-4 group-aria-expanded:brightness-0 group-aria-expanded:invert">
+          </button>
+
+          <div id="share-panel"
+            class="hidden absolute inset-0 items-center gap-4 px-8 bg-dark rounded-b-xl
+                   md:inset-auto md:bottom-full md:left-1/2 md:-translate-x-1/2 md:mb-4
+                   md:py-4 md:w-max md:rounded-xl
+                   after:content-[''] md:after:absolute md:after:top-full md:after:left-1/2
+                   md:after:-translate-x-1/2 md:after:border-8 md:after:border-transparent md:after:border-t-dark">
+            <span class="uppercase tracking-[0.5em] text-grayish">Share</span>
+            <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" class="w-5"></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" class="w-5"></a>
+            <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest" class="w-5"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </article>
 
   <footer class="attribution mt-6">
